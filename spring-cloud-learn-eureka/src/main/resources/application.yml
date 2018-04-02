@@ -3,3 +3,11 @@ server:
 spring:
   application:
     name: eureka-server
+endpoints:
+  health:
+    enabled: true
+  metrics:
+    enabled: true
+eureka:
+  instance:
+    prefer-ip-address: true
