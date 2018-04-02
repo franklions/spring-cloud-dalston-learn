@@ -11,6 +11,7 @@
     <modules>
         <module>spring-cloud-learn-eureka</module>
         <module>spring-cloud-learn-zuul</module>
+        <module>spring-cloud-learn-micro-service</module>
     </modules>
 
     <profiles>
