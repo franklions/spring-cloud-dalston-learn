@@ -1,0 +1,19 @@
+server:
+  port: 18761
+spring:
+  application:
+    name: eureka-server
+endpoints:
+  health:
+    enabled: true
+  metrics:
+    enabled: true
+eureka:
+  instance:
+    prefer-ip-address: true
+  server:
+    enable-self-preservation: false
+  client:
+    fetch-registry: false
+    service-url:
+      defaultZone: http://192.168.12.76:18761/eureka/
