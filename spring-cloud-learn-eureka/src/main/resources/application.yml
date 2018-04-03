@@ -11,3 +11,5 @@ endpoints:
 eureka:
   instance:
     prefer-ip-address: true
+  server:
+    enable-self-preservation: false
