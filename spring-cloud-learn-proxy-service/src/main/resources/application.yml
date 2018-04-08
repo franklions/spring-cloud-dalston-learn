@@ -3,12 +3,19 @@ server:
 spring:
   application:
     name: proxy-service
+  sleuth:
+    enabled: true
+    sampler:
+      percentage: 1
+  zipkin:
+    base-url: http://192.168.12.76:9411/
 eureka:
   instance:
     prefer-ip-address: true
   client:
     service-url:
-      defaultZone: http://192.168.12.76:8761/eureka/
+      defaultZone: http://192.168.12.76:18761/eureka/
+
 management:
   security:
     enabled: false
