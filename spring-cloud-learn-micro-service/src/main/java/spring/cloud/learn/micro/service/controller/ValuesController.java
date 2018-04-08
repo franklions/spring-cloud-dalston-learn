@@ -24,8 +24,6 @@ public class ValuesController {
             IotLogManager.getLogger(ValuesController.class);
 
     @Autowired
-    SpanLogger slf4jSpanLogger ;
-    @Autowired
     Tracer tracer;
 
     private static final Map<String,String> valueMaps = new HashMap<String, String>(){{
