@@ -8,7 +8,25 @@ eureka:
     prefer-ip-address: true
   client:
     service-url:
-      defaultZone: http://192.168.12.76:8761/eureka/
+      defaultZone: http://localhost:8761/eureka/
 management:
   security:
     enabled: false
+logging:
+  level:
+    root: info
+ribbon:
+  eureka:
+    enabled: true
+  filter:
+    metadata:
+      enabled: true
+  ReadTimeout: 50000
+  ConnectTimeout: 50000
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 50000

@@ -1,7 +1,7 @@
 package spring.cloud.learn.micro.service.controller;
 
-import com.iemylife.iot.logging.IotLogManager;
-import com.iemylife.iot.logging.IotLogger;
+import org.apache.log4j.LogManager;
+import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.sleuth.Tracer;
 import org.springframework.cloud.sleuth.log.SpanLogger;
@@ -20,8 +20,8 @@ import java.util.Map;
 @RestController
 public class ValuesController {
 
-    private static final IotLogger iotLogger =
-            IotLogManager.getLogger(ValuesController.class);
+    private static final Logger iotLogger =
+            LogManager.getLogger(ValuesController.class);
 
     @Autowired
     Tracer tracer;
