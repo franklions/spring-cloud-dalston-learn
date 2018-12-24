@@ -4,6 +4,8 @@ import com.google.common.util.concurrent.RateLimiter;
 import org.springframework.cloud.netflix.ribbon.RibbonClient;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import spring.cloud.learn.zuul.filter.PostNotSuccessResponseFilter;
+import spring.cloud.learn.zuul.filter.PreAuthenticationFilter;
 import spring.cloud.learn.zuul.filter.PreRibbonRoutingFilter;
 import spring.cloud.learn.zuul.filter.RateLimiterFilter;
 
@@ -26,5 +28,15 @@ public class AppConfig {
     @Bean
     public RateLimiterFilter rateLimiterFilter(){
         return new RateLimiterFilter();
+    }
+
+    @Bean
+    public PreAuthenticationFilter preAuthenticationFilter(){
+        return new PreAuthenticationFilter();
+    }
+
+    @Bean
+    public PostNotSuccessResponseFilter postNotSuccessResponseFilter(){
+        return new PostNotSuccessResponseFilter();
     }
 }

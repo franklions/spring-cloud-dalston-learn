@@ -29,4 +29,15 @@ hystrix:
       execution:
         isolation:
           thread:
-            timeoutInMilliseconds: 50000
+            timeoutInMilliseconds: 5000
+zuul:
+  route:
+    locator:
+      redis:
+        enabled: false
+    redis:
+      route-locator-hash-key: routes
+      properties:
+        host: localhost
+        port: 6379
+  ignored-patterns: /v1/micro-service/values/**

@@ -42,6 +42,27 @@
             <artifactId>spring-cloud-ribbon-rule-extend-starter</artifactId>
             <version>0.1.0</version>
         </dependency>
+        <dependency>
+            <groupId>com.iemylife.iot</groupId>
+            <artifactId>spring-cloud-zuul-route-locator-extend-starter</artifactId>
+            <version>0.1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.netflix.netflix-commons</groupId>
+            <artifactId>netflix-commons-util</artifactId>
+            <optional>true</optional>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.apache.commons/commons-io -->
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>1.3.2</version>
+        </dependency>
+        <dependency>
+            <groupId>com.marcosbarbero.cloud</groupId>
+            <artifactId>spring-cloud-zuul-ratelimit</artifactId>
+            <version>LATEST</version>
+        </dependency>
     </dependencies>
 
     <build>
