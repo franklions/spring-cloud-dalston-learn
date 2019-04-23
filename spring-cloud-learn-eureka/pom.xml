@@ -17,7 +17,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>1.8</java.version>
-        <docker.image.prefix>springio</docker.image.prefix>
+        <docker.image.prefix>franklions</docker.image.prefix>
     </properties>
 
     <dependencies>
@@ -42,7 +42,7 @@
             <artifactId>docker-maven-plugin</artifactId>
             <version>0.4.13</version>
             <configuration>
-                <dockerHost>http://192.168.12.76:2375</dockerHost>
+                <dockerHost>http://192.168.31.189:12375</dockerHost>
                 <imageName>${docker.image.prefix}/${project.artifactId}</imageName>
                 <dockerDirectory>src/main/docker</dockerDirectory>
                 <resources>

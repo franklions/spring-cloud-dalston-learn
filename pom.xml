@@ -15,6 +15,7 @@
         <module>spring-cloud-learn-proxy-service</module>
         <module>spring-cloud-learn-eureka-old</module>
         <module>spring-cloud-learn-zuul-old</module>
+        <module>spring-cloud-learn-zuul-config-demo</module>
     </modules>
 
     <profiles>
